@@ -16,10 +16,13 @@ if (getComputedStyle(feedbackComplete).display !== "none") {
   feedbackComplete.style.display = "none";
 }
 
+if (rating === -1) surveySubmit.disabled = true;
+
 // Event Handlers
 const updateRating = (event) => {
   const element = event.target;
   rating = element.innerText;
+  surveySubmit.disabled = false;
   ratingButtons.forEach((ratingButton) => {
     if (ratingButton === element)
       ratingButton.classList.add("circle-btn-selected");

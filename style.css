@@ -262,6 +262,12 @@ body {
     background-color: var(--clr-neutral-white);
 }
 
+#survey button[type="submit"]:disabled {
+    color: var(--clr-neutral-white);
+    background-color: var(--clr-neutral-medium-grey);
+    cursor: not-allowed;
+}
+
 /* Feedback Complete */
 #feedback-complete{
     display: flex;
