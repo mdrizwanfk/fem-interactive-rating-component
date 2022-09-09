@@ -8,7 +8,7 @@
 
     --clr-primary-orange: hsl(25, 97%, 53%);
     --clr-neutral-white: hsl(0, 0%, 100%);
-    --clr-neutral-light-grey: hsla(217, 12%, 63%, 0.315);
+    --clr-neutral-light-grey: hsla(217, 12%, 63%, 0.11);
     --clr-neutral-medium-grey: hsl(216, 12%, 54%);
     --clr-neutral-dark-blue: hsl(213, 19%, 18%);
     --clr-neutral-very-dark-blue: hsl(216, 12%, 8%);
@@ -177,6 +177,8 @@ body {
     background-color: var(--clr-neutral-very-dark-blue);
     color: var(--clr-neutral-white);
     font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-400);
     width: 100vw;
     min-height: 100vh;
     /* suggestion from dave, fem :) */
@@ -196,8 +198,7 @@ body {
     border-radius: 2rem;
 }
 
-#feedback-survey h1, 
-#feedback-complete h2, 
+#feedback-survey h1,  
 #feedback-survey p, 
 #feedback-complete p {
     margin-bottom: 2rem;
@@ -260,3 +261,20 @@ body {
 }
 
 /* Feedback Complete */
+#feedback-complete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#feedback-complete img {
+    margin: 0 auto 2rem;
+}
+
+.msg-pill {
+    width: fit-content;
+    margin: 0 auto 2.5rem;
+    padding: .8rem 1.2rem;
+    border-radius: 2rem;
+}
