@@ -233,6 +233,7 @@ body {
     font-weight: var(--fw-700);
     border: none;
     outline: transparent;
+    cursor: pointer;
 }
 
 .circle-btn:hover {
@@ -253,6 +254,7 @@ body {
     border: none;
     outline: transparent;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 #survey button[type="submit"]:hover {
