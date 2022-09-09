@@ -18,7 +18,13 @@ if (getComputedStyle(feedbackComplete).display !== "none") {
 
 // Event Handlers
 const updateRating = (event) => {
-  rating = event.target.innerText;
+  const element = event.target;
+  rating = element.innerText;
+  ratingButtons.forEach((ratingButton) => {
+    if (ratingButton === element)
+      ratingButton.classList.add("circle-btn-selected");
+    else ratingButton.classList.remove("circle-btn-selected");
+  });
 };
 
 const onFormSubmit = (event) => {
