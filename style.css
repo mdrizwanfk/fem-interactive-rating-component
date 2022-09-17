@@ -233,6 +233,7 @@ body {
     font-weight: var(--fw-700);
     border: none;
     outline: transparent;
+    cursor: pointer;
 }
 
 .circle-btn:hover {
@@ -253,11 +254,18 @@ body {
     border: none;
     outline: transparent;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 #survey button[type="submit"]:hover {
     color: var(--clr-primary-orange);
     background-color: var(--clr-neutral-white);
+}
+
+#survey button[type="submit"]:disabled {
+    color: var(--clr-neutral-white);
+    background-color: var(--clr-neutral-medium-grey);
+    cursor: not-allowed;
 }
 
 /* Feedback Complete */
